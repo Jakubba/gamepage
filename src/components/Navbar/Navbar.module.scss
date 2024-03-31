@@ -43,6 +43,7 @@
         color: #333;
         @media (max-width: 991px) {
           position: absolute;
+          z-index: 50;
           top: 50px;
           left: -100%;
           height: 100vh;
@@ -67,33 +68,32 @@
             @media (max-width: 992px) {
               position: relative;
             }
-            &:hover {
-              .navbarListMainCategoryTitle {
-                color: #9d0a0e;
-                @media (max-width: 991.5px) {
-                  color: white;
+            @media (min-width: 992px) {
+              &:hover {
+                .navbarListMainCategoryTitle {
+                  color: #9d0a0e;
+                  &::after {
+                    transform: none;
+                  }
                 }
-                &::after {
-                  transform: none;
-                }
-              }
 
-              .navbarListSubcategory {
-                height: auto;
-                min-height: 150px;
-                max-height: calc(100vh - 60px);
-                padding: 30px 0 0;
-                opacity: 1;
-                overflow: auto;
-                overflow-x: auto;
-                overflow-x: hidden;
-                pointer-events: auto;
-                @media (max-width: 991.5px) {
-                  position: absolute;
-                  top: 0;
-                  left: -100%;
-                  width: 100%;
-                  transition: left 0.25s ease-in-out;
+                .navbarListSubcategory {
+                  height: auto;
+                  min-height: 150px;
+                  max-height: calc(100vh - 60px);
+                  padding: 30px 0 0;
+                  opacity: 1;
+                  overflow: auto;
+                  overflow-x: auto;
+                  overflow-x: hidden;
+                  pointer-events: auto;
+                  @media (max-width: 991.5px) {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    transition: left 0.25s ease-in-out;
+                  }
                 }
               }
             }
@@ -237,8 +237,10 @@
               font-weight: 100;
               text-align: left;
               color: #e7e7db;
-              &:hover {
-                color: #9d0a0e;
+              @media (min-width: 992px) {
+                &:hover {
+                  color: #9d0a0e;
+                }
               }
             }
           }
@@ -288,12 +290,13 @@
         transition: 0.5s ease-in-out;
         cursor: pointer;
         background: transparent;
-        &:hover {
-          border: none;
-        }
         @media (min-width: 992px) {
           display: none;
+          &:hover {
+            border: none;
+          }
         }
+
         span {
           display: block;
           position: absolute;
