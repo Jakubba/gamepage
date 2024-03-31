@@ -1,0 +1,188 @@
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 0, 0);
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+*[hidden] {
+  display: none;
+}
+body {
+  line-height: 1;
+}
+menu,
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Anglodavek';
+  src: lockal('Anglodavek-a55E.ttf'),
+    url('./fonts/Anglodavek-a55E.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AnglodavekBold';
+  src: lockal('AnglodavekBold-EOO9.ttf'),
+    url('./fonts/AnglodavekBold-EOO9.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AnglodavekBoldItalic';
+  src: lockal('AnglodavekBoldItalic-Oggd.ttf'),
+    url('./fonts/AnglodavekBoldItalic-Oggd.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AnglodavekItalic';
+  src: lockal('AnglodavekItalic-Z22Z.ttf'),
+    url('./fonts/AnglodavekItalic-Z22Z.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Iokharic';
+  src: lockal('Iokharic-dqvK.ttf'), url('./fonts/Iokharic-dqvK.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IokharicBold';
+  src: lockal('IokharicBold-Plor.ttf'),
+    url('./fonts/IokharicBold-Plor.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IokharicBoldItalic';
+  src: lockal('IokharicBoldItalic-LGmZ.ttf'),
+    url('./fonts/IokharicBoldItalic-LGmZ.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IokharicItalic';
+  src: lockal('IokharicItalic-XMdd.ttf'),
+    url('./fonts/IokharicItalic-XMdd.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OldeDethek';
+  src: lockal('OldeDethek-VYYe.ttf'),
+    url('./fonts/OldeDethek-VYYe.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OldeDethekItalic';
+  src: lockal('OldeDethekItalic-J44K.ttf'),
+    url('./fonts/OldeDethekItalic-J44K.ttf') format('truetype');
+}
