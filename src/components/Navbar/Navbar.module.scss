@@ -1,5 +1,6 @@
 .navbarContainer {
   width: 100%;
+  max-width: 1600px;
   border-bottom: 4px solid #9d0a0e;
   background: #e7e7db;
   color: #333;
@@ -8,7 +9,6 @@
   z-index: 999;
   .navbarWrapper {
     padding: 0 10px;
-    max-width: 1220px;
     margin: auto;
     .navbarBox {
       display: flex;
